@@ -10,12 +10,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fitsSystemWindows="true"
-            android:theme="@style/AppTheme">
+            android:theme="@style/AppTheme"
+            android:elevation="@dimen/list_side_margin">
 
             <android.support.design.widget.CollapsingToolbarLayout
                 android:id="@+id/collapsing_toolbar"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_height="175dp"
                 android:fitsSystemWindows="true"
                 app:contentScrim="@color/theme_primary"
                 app:expandedTitleMarginEnd="64dp"
@@ -32,20 +33,23 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
-                    app:layout_collapseMode="pin">
+                    app:layout_collapseMode="pin"
+                    android:elevation="8dp">
 
                     <android.support.v7.widget.Toolbar
                         android:id="@+id/toolbar"
                         android:layout_width="match_parent"
                         android:layout_height="?actionBarSize"
                         app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-                        android:elevation="8dp">
+                        >
 
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:adjustViewBounds="false"
                             android:contentDescription="@string/app_name"
-                            android:src="@drawable/logo" />
+                            android:src="@drawable/logo"
+                            android:textAlignment="center" />
 
                     </android.support.v7.widget.Toolbar>
                 </FrameLayout>
@@ -67,6 +71,7 @@
                 android:layout_height="match_parent"
                 android:clipToPadding="false"
                 android:scrollbarStyle="outsideOverlay"
+                android:paddingTop="@dimen/list_side_margin"
                 android:paddingLeft="@dimen/list_side_margin"
                 android:paddingRight="@dimen/list_side_margin"
                 android:paddingBottom="28dp" />
