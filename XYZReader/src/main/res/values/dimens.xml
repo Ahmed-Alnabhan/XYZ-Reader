@@ -15,5 +15,6 @@
     <dimen name="dimen_16_dp">16dp</dimen>
     <dimen name="card_rest_elevation">2dp</dimen>
     <dimen name="card_picked_up">8dp</dimen>
+    <dimen name="dimen_0_dp">0dp</dimen>
 
 </resources>
